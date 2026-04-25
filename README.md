@@ -17,6 +17,7 @@ App will be available at http://localhost:8080
 ## How it works
 
 The app consists of:
+
 - 3 FastAPI instances (Python)
 - Nginx that distributes traffic between instances
 - Redis that stores all data
@@ -36,11 +37,10 @@ If one instance goes down (e.g. via /chaos) the other two keep running.
 ## How to stop
 
 ```bash
-docker compose down
+./stop.sh
 ```
 
 ---
-
 
 # Stock Market Simulator
 
@@ -79,5 +79,5 @@ Dzięki temu jeśli jedna instancja padnie to pozostałe dwie dalej działają.
 ## Zatrzymanie
 
 ```bash
-docker compose down
+./stop.sh
 ```
